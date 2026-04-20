@@ -28,7 +28,7 @@ from openbb_akshare.models.fund_holdings import AkshareFundHoldingsFetcher
 provider = Provider(
     name="akshare",
     description="Data provider for openbb-akshare.",
-    credentials=["api_key"],
+    credentials=[],
     website="https://akshare.akfamily.xyz/",
     # Here, we list out the fetchers showing what our provider can get.
     # The dictionary key is the fetcher's name, used in the `router.py`.

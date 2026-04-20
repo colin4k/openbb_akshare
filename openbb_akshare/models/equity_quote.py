@@ -102,10 +102,6 @@ class AKShareEquityQuoteFetcher(
         symbols = query.symbol.split(",")
         all_data = []
 
-        if not api_key:
-            logger.error("AKShare requires an API key.")
-            return all_data
-
         def get_one(symbol, api_key: str, use_cache) -> pd.DataFrame:
             """Get the data for one ticker symbol."""
             quote = pd.DataFrame()
